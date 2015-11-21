@@ -1,0 +1,51 @@
+<html>
+<title>
+Welcome to mstore.com
+</title>
+ <head>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/templates.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/model/mediaInfo.js"></script>
+  <script type="text/javascript" src="js/model/item.js"></script>
+  <script type="text/javascript" src="js/model/store.js"></script>
+  <script type="text/javascript" src="js/model/container.js"></script>
+  <script type="text/javascript" src="js/view/itemListView.js"></script>
+  <script type="text/javascript" src="js/view/mainPageView.js"></script>
+ </head> 
+<body> 
+<script>
+	$( document ).ready(function() {
+		console.log( "ready!" );
+		var pageView = new MainPageView();
+		pageView.appendListElements();
+	});
+</script>
+<div class="head_Ligthouse fontSize11">
+<span class="floatRight">Eng</span>
+<span class="floatRight">Arm</span>
+<span class="floatRight">Contact Us</span>
+</div>
+
+<div class="head_Style"> 
+ <div class="fontSize18">
+ <a  href="registrationform.html">Sign in</a>
+ </div>
+  
+</div> 
+<div id="mainContainer">
+	<div id = "item_Container_Class" class="item_Container_Class"> 
+	
+	</div>
+
+</div>
+
+<div id="navcontainer" class="align_Middle">
+
+		
+</div>
+
+</body>
+
+
+</html>

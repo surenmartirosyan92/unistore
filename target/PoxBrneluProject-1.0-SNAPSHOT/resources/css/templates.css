@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+input,option,select,button{
+	font-size: 100%;
+	font:inherit;
+}
+option {
+	font-family: Arial;
+	font-size: 11px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family:Arian AMU, Arial;
+	font-size: 11px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.fontSize1 {
+	font-size: 12px;
+}
+.fontSize11 {
+	font-size: 11px;
+}
+.fontSize2 {
+	font-size: 10px;
+}
+.fontSize18 {
+	font-size: 18px;
+}
+.fontSize19 {
+	font-size: 19px;
+}
+.fontSize15 {
+	font-size: 15px;
+}
+.fontSize14 {
+	font-size: 14px;
+}
+.fontSize13 {
+	font-size: 13px;
+}
+html[dir=ltr] .floatLeft{
+	float:left;
+}
+
+html[dir=rtl] .floatLeft{
+	float:right;
+}
+
+html[dir=ltr] .floatRight{
+	float:right;
+}
+html[dir=rtl] .floatRight{
+	float:left;
+}
+
+html[dir=ltr] .alignLeft{
+	text-align:left;
+}
+
+html[dir=rtl] .alignLeft{
+	text-align:right;
+}
+
+html[dir=ltr] .alignRight{
+	text-align:right;
+}
+
+html[dir=rtl] .alignRight{
+	text-align:left;
+}
+
+html[dir=rtl] .Rtl_FlipHorizontally{
+	transform:scaleX(-1);
+	-ms-transform:scaleX(-1); /* IE 9 */
+	-moz-transform:scaleX(-1); /* Firefox */
+	-webkit-transform:scaleX(-1); /* Safari and Chrome */
+	-o-transform:scaleX(-1); /* Opera */
+}
+
+.ltr{
+	direction: ltr;
+}
+
+.rtl{
+	direction: rtl;
+}
+
+html,body {
+	height: 100%;
+	margin:0px;
+}
+
+.BorderBox {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */	
+}
+.DisableScreen {
+	background-image: url('');
+	background-position: 0px 0px;
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+
+	background-attachment:fixed;
+	position:absolute;
+	background-color:transparent;
+	left:0px;
+	top:0px;
+	z-index:1000000;
+	
+}
+.ProgressBarControl_Body {
+	width: 370px;
+	height: 80px;
+	border-width: 2px;
+	border-style:ridge;
+	background-color: #EEEEEE;	
+	}
+.ProgressBarControl_Text {
+	text-align: center;
+	font-weight: bold;
+	color: #000000;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.ie7{
+	
+}
+.language1{
+	
+}
+.language2{
+	
+}
+.language3{
+	
+}

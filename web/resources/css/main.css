@@ -1,0 +1,56 @@
+.head_Ligthouse{
+	border:1px solid  #B3B2B1;
+	width:100%;
+	margin-bottom:10px;
+}
+
+.head_Style{
+	background-image:url("../img/mainTheme.bmp");
+	margin-top:2px;
+	width:100%;
+	height:25px;
+}
+
+.display_Inline { display: inline; }
+
+.item_Container_Class{
+ width:60%;
+ margin-left:20%;
+ display: inline;
+ display:  table;
+ width:auto;
+ border-spacing:5px;
+}
+
+.align_Middle {
+ 
+}
+
+ .divTable
+    {
+
+   }
+
+    .divRow
+    {
+       display:table-row;
+       width:auto;
+    }
+
+    .divCell
+    {
+		border:1px solid  #B3B2B1;
+        float:left;/*fix for  buggy browsers*/
+        display:table-column;
+		margin:5px;
+        width:200px;
+    }
+	.div_Info_Label{
+	 border:1px solid  #B3B2B1;
+	 margin:3px;
+	}
+	
+	.list_Image_Size{
+		width:200px;
+		height:200px;
+	}
