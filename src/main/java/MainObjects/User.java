@@ -1,9 +1,12 @@
 package MainObjects;
 
+import java.util.Objects;
+
 /**
- * @auther user
- * @since 24.11.2015.
+ * A class for serialization and deserialization of user.
  *
+ * @auther Suren Martirosyan
+ * @since 24.11.2015.
  */
 public class User {
 
@@ -14,6 +17,10 @@ public class User {
     private String userKey;
 
     public User (){}
+
+    public User(Integer id) {
+        this.id = Objects.requireNonNull(id);
+    }
 
     public User (Integer id, String userName, String mail, String password, String userKey) {
         this.id = id;
