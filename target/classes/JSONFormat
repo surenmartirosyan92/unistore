@@ -1,0 +1,7 @@
+On registration
+{
+	userName: "userName",
+	mail: "mail",
+	password: "password",
+	repeatPassword: "repeatPassword"
+}
