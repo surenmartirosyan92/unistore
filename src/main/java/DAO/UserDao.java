@@ -9,9 +9,13 @@ import java.util.List;
  */
 public interface UserDao {
 
-    void createUser(String name, String secondName);
+    void createUser(String userName, String mail, String password, String userKey);
 
     User getUser(Integer id);
+
+    User getUserByUserKey(String userKey);
+
+    User getUserByMail(String mail);
 
     List<User> listUsers();
 
