@@ -3,46 +3,63 @@
 Welcome to mstore.com
 </title>
  <head>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/templates.css">
+ <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/model/mediaInfo.js"></script>
-  <script type="text/javascript" src="js/model/item.js"></script>
-  <script type="text/javascript" src="js/model/store.js"></script>
-  <script type="text/javascript" src="js/model/container.js"></script>
-  <script type="text/javascript" src="js/view/itemListView.js"></script>
-  <script type="text/javascript" src="js/view/mainPageView.js"></script>
- </head> 
-<body> 
-<script>
-	$( document ).ready(function() {
-		console.log( "ready!" );
-		var pageView = new MainPageView();
-		pageView.appendListElements();
-	});
-</script>
-<div class="head_Ligthouse fontSize11">
-<span class="floatRight">Eng</span>
-<span class="floatRight">Arm</span>
-<span class="floatRight">Contact Us</span>
-</div>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-<div class="head_Style"> 
- <div class="fontSize18">
- <a  href="registrationform.html">Sign in</a>
+ </head>
+<body>
+<nav class="navbar navbar-inverse">
+ <div class="container-fluid">
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="#">Unistore</a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+   <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Home</a></li>
+    <li class="dropdown">
+     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics <span class="caret"></span></a>
+     <ul class="dropdown-menu">
+      <li><a href="#">Phones</a></li>
+      <li><a href="#">Notebooks</a></li>
+      <li><a href="#">PC's</a></li>
+     </ul>
+    </li>
+    <li class="dropdown">
+     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Clothes <span class="caret"></span></a>
+     <ul class="dropdown-menu">
+      <li><a href="#">Man clothes</a></li>
+      <li><a href="#">Woman clothes</a></li>
+      <li><a href="#">For Kids</a></li>
+     </ul>
+    </li>
+    <li class="dropdown">
+     <a class="dropdown-toggle" data-toggle="dropdown" href="#">For home<span class="caret"></span></a>
+     <ul class="dropdown-menu">
+      <li><a href="#">Furniture</a></li>
+      <li><a href="#">Design Accesories</a></li>
+     </ul>
+    </li>
+   </ul>
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+   </ul>
+  </div>
  </div>
-  
-</div> 
-<div id="mainContainer">
-	<div id = "item_Container_Class" class="item_Container_Class"> 
-	
-	</div>
+</nav>
 
-</div>
-
-<div id="navcontainer" class="align_Middle">
-
-		
+<div class="container">
+ <h3>UniStore</h3>
+ <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+ <p>Only when the button is clicked, the navigation bar will be displayed.</p>
 </div>
 
 </body>

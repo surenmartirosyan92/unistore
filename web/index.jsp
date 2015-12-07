@@ -7,9 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>asdf asdf </title>
-  </head>
+
   <body>
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script>
@@ -19,7 +17,7 @@
         });
     }
   </script>
-  <jsp:include page="/resources/registrationform.html" />
+  <jsp:include page="/resources/mstore.html" />
   <button onclick="myFunction()">Click me</button>
   </body>
 </html>
