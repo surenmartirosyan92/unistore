@@ -34,9 +34,9 @@ public class UserDaoImpl implements UserDao{
      * Inserts user data to Users table of database
      */
     @Override
-    public void createUser(String userName, String mail, String password, String userKey) {
-        String query = "INSERT INTO Users (userName, mail, password, userKey) VALUES (?, ?, ?, ?)";
-        jdbcTemplate.update(query, userName, mail, password, userKey);
+    public void createUser(User user) {
+        String query = "INSERT INTO Users (userName, mail, password, userKey, userLogin) VALUES (?, ?, ?, ?, ?)";
+        jdbcTemplate.update(query, user.getUserName(), user.getUserMail(), user.getUserPassword(), user.getUserKey(), user.getUserLogin());
     }
 
     /**

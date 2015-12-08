@@ -29,7 +29,7 @@ public class RegistrationServlet extends javax.servlet.http.HttpServlet {
 	        User newUser = null;
 	        try {
 				try {
-					//newUser = RegistrationManager.register(requestdata);
+					newUser = RegistrationManager.register(requestdata);
 				} catch (UnistoreException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

@@ -15,7 +15,7 @@ public interface UserDao {
     /**
      * Inserts user data to Users table of database
      */
-    void createUser(String userName, String mail, String password, String userKey);
+    void createUser(User user);
 
     /**
      * Loads user data by id and creates corresponding {@code User} object
