@@ -21,17 +21,17 @@ public class RegistrationManager {
 		user.fromJson(requestData);
 		User newUser  = new User();
 		if(!user.isUserVaild()){
-			return newUser; // validation problem
+			return null; // validation problem
 		}
 		if(userDao.getUserByMail(user.getUserLogin()) == null){
-			//newUser = userDao.createUser(user);// Sur es masum aveli lava userin poxancenq
+			 userDao.createUser(user);// Sur es masum aveli lava userin poxancenq
 			//loaclDev
 		}else{
 			System.out.print("user with login" + user.getUserLogin() + " already exists");
-			return newUser;
+			return null;
 			//throw new UnistoreException();
 		}
-		return newUser; 
+		return user; 
 	}
 	
 }
