@@ -19,7 +19,8 @@ public class User {
 	private String userLogin = null;
 	private String userName = null;
 	private Integer userID = null;
-	private String userKey = null;;
+	private String userKey = null;
+	private String userMail = null;
 	
 	public void setUserID(Integer userId) {
 		this.userID = userId;
@@ -36,7 +37,15 @@ public class User {
 			this.userPassword = PasswordHash.createHash(userPassword);
 		}
 	}
-
+	
+    public String getUserMail() {
+	    return userMail;
+    }
+    
+    public void setUserMail(String userMail) {
+		this.userMail = userMail;
+	}
+    
 	public String getUserPassword() {
 		return userPassword;
 	}
@@ -73,6 +82,10 @@ public class User {
 			System.out.print("can't generate user key: User.java");
 		}
 		
+	}
+	
+	public void setUserKey(String userKey) {
+		this.userKey = userKey;
 	}
 	
 	public String getUserKey(){
