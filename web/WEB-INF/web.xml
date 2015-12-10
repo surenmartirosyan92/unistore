@@ -11,4 +11,12 @@
         <servlet-name>MyServlet</servlet-name>
         <url-pattern>/MyServlet/*</url-pattern>
     </servlet-mapping>
+      <servlet>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>Servlet.RegistrationServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -1,24 +1,39 @@
-function submmit(){
-	var user ={
-		//"userType":$("#userType option:selected").val(), never mind
-		"fullName": $("#fullName").val(),
-		"email": $("#email").val(),
-		"password": $("#password2").val(),
-		"repeatedPassword" : $("#password2").val()
-	}
 
-	if(validate(user)){
-	// save this user
-		function successCallback(response) {
-			window.location.href = 'https://www.youtube.com/watch?v=CNDJiUDVLMg';// nya, es tox@ pti rad arvi aber :D
-		}
-			ajaxJSONPost('MyServlet', user, successCallback);
-	 }else{
-		console.log("cannot save");
-	 }
+var userRegitrationForm = function(){
+//	
+
 }
 
-function validate(user){
+
+userRegitrationForm.prototype= {
+		
+	init:function(){
+		
+		
+		return this.getElement();
+	},		
+	submit: function(){
+		var user ={
+			//"userType":$("#userType option:selected").val(), never mind
+			"userName": $("#fullName").val(),
+			"email": $("#email").val(),
+			"password": $("#password1").val(),
+			"repeatedPassword" : $("#password2").val()
+		}
+
+		 if(this.validate(user)){
+			// save this user
+			 function successCallback(response) {
+					alert("sax normala")// 
+				}
+			 this.ajaxJSONPost("/register","POST",user, successCallback);// to utils
+		 }else{
+			console.log("cannot save");
+		 }
+
+},
+
+validate : function(user){
 
 	var userType = user.userType;
 	var fullName = user.fullName;
@@ -48,23 +63,35 @@ function validate(user){
 		isRegistrationAllowed = false;
 		alert("mail is invalid");
 	}
-  return isRegistrationAllowed;
-}
+   return isRegistrationAllowed;
+},
 
-function ajaxJSONPost(url, jsondata, callback){
-	$.ajax({
-		url: url,
-		type: 'post',
-		data : {
-			data1 : JSON.stringify(jsondata)
-		},
-		dataType: "text",
-		success: callback,
-		error: function(){
-			alert("error message");
+ajaxJSONPost : function(url,requestMethod,jsondata, callback){
+	sendAjaxRequest(url,requestMethod,'application/json',{data:JSON.stringify(jsondata)},callback);
+},
+
+	/**
+	user.login
+	user.password
+	*/
+	request_Login:function(userJson){
+		var container = new Container();
+		container.initialize();
+		if(container.login_for(userJson)){
+			var user = new User();
+			user.setName(userJson.login);
+			var pageView = new MainPageView();
+			pageView.setUser(user);
+			pageView.appendListElements();	
 		}
-	});
+	},
+
+	getElement: function(){
+		var element = '<div id="container"></div>'
+			//
+		return element;	
+	}
 }
 
-
+var UserRegitrationForm = new userRegitrationForm();
 
