@@ -3,6 +3,7 @@
 Login,Register
 </title>
  <head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
   <script type="text/javascript" src="resources/js/jquery.js"></script>
   <script type="text/javascript" src="resources/js/registrationForm.js"></script>
   <link rel="stylesheet" type="text/css" href="resources/css/main.css">
@@ -10,34 +11,44 @@ Login,Register
   <link rel="stylesheet" type="text/css" href="resources/css/registrationForm.css">
  </head>
 <body>
-<div class="head_Ligthouse fontSize14">
-<span class="floatRight">Eng</span>
-<span class="floatRight">Arm</span>
-<span class="floatRight">Contact Us</span>
-</div>
+<div class="container">
 
-<div class="reg_Head_Style">
-</div>
- <div class="fontSize18">
- <span>Register To mstore.com , Create Your Own Store For Free !</span>
+ <div class="row centered-form">
+  <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+   <div class="panel panel-default">
+    <div class="panel-heading">
+     <h3 class="panel-title">Unistore</h3>
+    </div>
+    <div class="panel-body">
+     <form role="form">
+
+        <div class="form-group">
+         <input type="text" name="username" id="first_name" class="form-control input-sm glowing-border" placeholder="User Name">
+        </div>
+
+
+
+
+
+      <div class="form-group">
+       <input type="email" name="email" id="mail" class="form-control input-sm glowing border" placeholder="Email Address">
+      </div>
+
+      <div class="form-group">
+       <input type="password" name="password" id="post_code" class="form-control input-sm glowing border" placeholder="Password">
+      </div>
+      <div class="form-group">
+       <input type="password" name="repeate_password" id="rp" class="form-control input-sm glowing border" placeholder="Repeate Password">
+      </div>
+
+
+      <input type="submit" value="Register" class="btn btn-info btn-block">
+
+     </form>
+    </div>
+   </div>
+  </div>
  </div>
-
-<div id="container">
-
-<!--<form action="requesst">-->
-
- <select id="userType">
-	   <option>Select User type</option>
-	   <option value="store">Store</option>
-	   <option value="seller">Single Seller</option>
- </select><br>
-  <input  id="fullName" type="text" name="fullname" placeholder="User or Organisation"><br>
-  <input id= "email" type="text" name="email" placeholder="Email"><br>
-  <input id="password" type="password" name="password" placeholder="Password"></input><br>
-  <input id="password2" type="password" name="password" placeholder="Repeat Password"></input><br>
-  <button  class="register_Button" onclick="submmit()"></button>
-<!--</form>-->
-
 </div>
 
 </body>

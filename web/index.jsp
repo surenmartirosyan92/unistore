@@ -18,6 +18,5 @@
     }
   </script>
   <jsp:include page="/resources/mstore.html" />
-  <button onclick="myFunction()">Click me</button>
   </body>
 </html>
