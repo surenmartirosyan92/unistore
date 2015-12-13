@@ -4,7 +4,11 @@ var userRegitrationForm = function(){
 
 }
 
-
+/**
+ * registration for manager
+ * @author Karlen Mkrthcyan
+ *
+ */
 userRegitrationForm.prototype= {
 		
 	init:function(){
@@ -12,7 +16,7 @@ userRegitrationForm.prototype= {
 		
 		return this.getElement();
 	},		
-	submit: function(){
+	register: function(){
 		var user ={
 			//"userType":$("#userType option:selected").val(), never mind
 			"userName": $("#fullName").val(),
@@ -24,9 +28,9 @@ userRegitrationForm.prototype= {
 		 if(this.validate(user)){
 			// save this user
 			 function successCallback(response) {
-					alert("sax normala")// 
+					alert("register called")// 
 				}
-			 this.ajaxJSONPost("/register","POST",user, successCallback);// to utils
+			 this.ajaxJSONPost("register","POST",user, successCallback);// to utils
 		 }else{
 			console.log("cannot save");
 		 }
@@ -87,9 +91,46 @@ ajaxJSONPost : function(url,requestMethod,jsondata, callback){
 	},
 
 	getElement: function(){
-		var element = '<div id="container"></div>'
+		var element = '';
 			//
-		return element;	
+		
+		element += '<title>Login,Register</title>';
+		    element += '<head>';
+		    element +=  '<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">';
+		    element +=	'</head>';
+		    element +=	'<body>';
+		    element +=	'<div class="container">';
+	
+		    element += '<div class="row centered-form">';
+		    element +=  '<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">';
+		    element +=  '<div class="panel panel-default">';
+		    element +=	    '<div class="panel-heading">';
+		    element +=     '<h3 class="panel-title">Unistore</h3>';
+		    element +=    '</div>';
+		    element +=  '<div class="panel-body">';
+		    element +=        '<div class="form-group">';
+		    element +=	         '<input type="text" name="username" id="fullName" class="form-control input-sm glowing-border" placeholder="User Name">';
+		    element +=		        '</div>';
+	
+		    element +=		      '<div class="form-group">';
+		    element +=	       '<input type="email" name="email" id="email" class="form-control input-sm glowing border" placeholder="Email Address">';
+		    element +=		      '</div>';
+	
+		    element +=	      '<div class="form-group">';
+		    element +=	       '<input type="password" name="password" id="password1" class="form-control input-sm glowing border" placeholder="Password">';
+		    element +=	      '</div>';
+		    element +=	      '<div class="form-group">';
+		    element +=		       '<input type="password" name="repeate_password" id="password2" class="form-control input-sm glowing border" placeholder="Repeate Password">';
+		    element +=	      '</div>';
+		    element +=	      '<input type="button" value="Register" onclick="UserRegitrationForm.register();" class="btn btn-info btn-block">';
+		    element +=    '</div>';
+		    element +=	  '</div>';
+		    element +=	  '</div>';
+		    element +=	 '</div>';
+		    element +=	'</div>';
+		    element +=		'</body>';
+		
+	   return element;	
 	}
 }
 

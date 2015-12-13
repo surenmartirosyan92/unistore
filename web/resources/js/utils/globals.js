@@ -1,3 +1,9 @@
+
+/**
+ * utility functions, global modules
+ * @author Karlen Mkrthcyan
+ *
+ */
 var serverPath = "http://localhost:8080/"
 var MODULES = {
 	SIGN_IN:'sign_in',
