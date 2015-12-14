@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="resources/js/home_page.js"> </script>
+    <link rel="stylesheet" type="text/css" href="resources/css/registrationForm.css">
+
+    <title>Profile</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Unistore</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Phones</a></li>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">PC's</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Clothes <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Man clothes</a></li>
+                        <li><a href="#">Woman clothes</a></li>
+                        <li><a href="#">For Kids</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">For home<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Design Accesories</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="#" id='sign_up'><span  class="glyphicon glyphicon-user"></span> Edit Profile</a></li> <!-- stex heto button em dnelu vor href-ov chgna , js-ov anenq !-->
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+
+
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Username</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://scontent-frt3-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/397560_3125080931902_1445366152_n.jpg?oh=7917501cdf6242ee1651ab8a3a8f46d5&oe=56D89E3D" class="img-circle img-responsive">   <button type="button" class="btn btn-info">Change profile picture</button>
+
+                        </div>
+                    <div class=" col-md-9 col-lg-9 ">
+                            <table class="table table-user-information">
+                                <tbody>
+                                <tr>
+                                    <td>Full name</td>
+                                    <td>Garik Khachanyan</td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>Armenia</td>
+                                </tr>
+                                <tr>
+                                    <td>Region</td>
+                                    <td>Yerevan</td>
+                                </tr>
+                                <tr>
+                                    <td>Home Address</td>
+                                    <td> Moldovakan 44</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><a href="mailto:info@support.com">info@support.com</a></td>
+                                </tr>
+                                <td>Phone Number</td>
+                                <td>+37441330335
+                                </td>
+                          
+                                <tr>
+                                    <td>Old password</td>
+                                    <td><input type="password" name="oldpassword"  class="form-control input-sm glowing border" placeholder="Old Password">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>New password</td>
+                                    <td><input type="password" name="newpassword"  class="form-control input-sm glowing border" placeholder="New Password"></td>
+                                </tr>
+                                <tr>
+                                    <td>Some field</td>
+                                    <td>Here</td>
+                                </tr>
+                                <tr>
+                                    <td>Some field</td>
+                                    <td>Here</td>
+                                </tr>
+                                <tr>
+                                    <td>Some field</td>
+                                    <td>Here</td>
+                                </tr>
+                                <tr>
+                                    <td>Some field</td>
+                                    <td>Here</td>
+                                </tr>
+
+
+
+                                </tbody>
+                            </table>
+
+                            <a href="#" class="btn btn-primary">My Sales Performance</a>
+                            <a href="#" class="btn btn-primary">Add new sale item</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                        <span class="pull-right">
+                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                        </span>
+                </div>
+
+            </div>
+    </div>
+</body>
+</html>
